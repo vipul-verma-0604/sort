@@ -1,7 +1,7 @@
 <table class="myTable">
   <thead>
     <tr>
-      <th (click)="onClick()" appToogler [sortToggler]="true" (sortOrder)="getSortOrder($event)">Id <span class="fa fa-caret-down"></span><span class="fa fa-caret-up"></span></th>
+      <th (click)="onClick()" appToogler [sortToggler]="true" (sortOrder)="getSortOrder($event)">Id</th>
       <th (click)="onClick()" appToogler [sortToggler]="false" (sortOrder)="getSortOrder($event)">Name</th>
       <th (click)="onClick()" appToogler [sortToggler]="false" (sortOrder)="getSortOrder($event)">Location</th>
     </tr>
@@ -14,3 +14,5 @@
     </tr>
   </tbody>
 </table>
+
+<!-- <span class="fa fa-caret-down" *ngIf="sortOrder == 'asc'"></span><span class="fa fa-caret-up" *ngIf="sortOrder == 'desc'"></span> -->

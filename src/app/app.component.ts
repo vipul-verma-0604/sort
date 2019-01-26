@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +15,8 @@ export class AppComponent {
     {"id": "001", "Name": "Vipul", "Location": "India"},
     {"id": "001", "Name": "Vipul", "Location": "India"}
   ]
+
+  constructor(private renderer: Renderer2) {}
 
   onClick(e) {
     
