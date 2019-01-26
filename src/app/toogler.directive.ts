@@ -43,6 +43,7 @@ export class TooglerDirective implements OnInit {
         this.renderer.removeClass(elems[i].children[0], 'fa-caret-up');
         this.renderer.removeClass(elems[i].children[0], 'fa-caret-down');
       }
+      
       this.renderer.addClass(span, 'fa');
       this.renderer.addClass(span, 'fa-caret-down');
       this.sortOrder.emit('desc');
