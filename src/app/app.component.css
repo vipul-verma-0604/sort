@@ -1,0 +1,15 @@
+.myTable {
+    width: 400px;
+}
+
+.myTable thead {
+    background-color: #aaa;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    text-align: left;
+}
+
+.myTable tbody tr td {
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}

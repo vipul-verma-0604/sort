@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sort';
+  toggle: boolean;
+  sortOrder: string;
+  info = [
+    {"id": "001", "Name": "Vipul", "Location": "India"},
+    {"id": "001", "Name": "Vipul", "Location": "India"},
+    {"id": "001", "Name": "Vipul", "Location": "India"},
+    {"id": "001", "Name": "Vipul", "Location": "India"},
+    {"id": "001", "Name": "Vipul", "Location": "India"}
+  ]
+
+  onClick(e) {
+    
+  }
+
+  getSortOrder(e) {
+    console.log(e);
+    this.sortOrder = e;
+  }
 }
